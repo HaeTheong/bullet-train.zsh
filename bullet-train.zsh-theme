@@ -40,7 +40,7 @@ fi
 
 # PROMPT
 if [ ! -n "${BULLETTRAIN_PROMPT_CHAR+1}" ]; then
-  BULLETTRAIN_PROMPT_CHAR="❯"
+  BULLETTRAIN_PROMPT_CHAR="\>"
 fi
 if [ ! -n "${BULLETTRAIN_PROMPT_ROOT+1}" ]; then
   BULLETTRAIN_PROMPT_ROOT=true
@@ -63,7 +63,7 @@ if [ ! -n "${BULLETTRAIN_STATUS_ERROR_BG+1}" ]; then
   BULLETTRAIN_STATUS_ERROR_BG=red
 fi
 if [ ! -n "${BULLETTRAIN_STATUS_FG+1}" ]; then
-  BULLETTRAIN_STATUS_FG=white
+  BULLETTRAIN_STATUS_FG=black
 fi
 
 # TIME
@@ -90,7 +90,7 @@ if [ ! -n "${BULLETTRAIN_VIRTUALENV_BG+1}" ]; then
   BULLETTRAIN_VIRTUALENV_BG=yellow
 fi
 if [ ! -n "${BULLETTRAIN_VIRTUALENV_FG+1}" ]; then
-  BULLETTRAIN_VIRTUALENV_FG=white
+  BULLETTRAIN_VIRTUALENV_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_VIRTUALENV_PREFIX+1}" ]; then
   BULLETTRAIN_VIRTUALENV_PREFIX=🐍
@@ -101,7 +101,7 @@ if [ ! -n "${BULLETTRAIN_NVM_BG+1}" ]; then
   BULLETTRAIN_NVM_BG=green
 fi
 if [ ! -n "${BULLETTRAIN_NVM_FG+1}" ]; then
-  BULLETTRAIN_NVM_FG=white
+  BULLETTRAIN_NVM_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_NVM_PREFIX+1}" ]; then
   BULLETTRAIN_NVM_PREFIX="⬡ "
@@ -123,7 +123,7 @@ if [ ! -n "${BULLETTRAIN_RUBY_BG+1}" ]; then
   BULLETTRAIN_RUBY_BG=red
 fi
 if [ ! -n "${BULLETTRAIN_RUBY_FG+1}" ]; then
-  BULLETTRAIN_RUBY_FG=white
+  BULLETTRAIN_RUBY_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_RUBY_PREFIX+1}" ]; then
   BULLETTRAIN_RUBY_PREFIX=♦️
@@ -134,7 +134,7 @@ if [ ! -n "${BULLETTRAIN_GO_BG+1}" ]; then
   BULLETTRAIN_GO_BG=cyan
 fi
 if [ ! -n "${BULLETTRAIN_GO_FG+1}" ]; then
-  BULLETTRAIN_GO_FG=white
+  BULLETTRAIN_GO_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_GO_PREFIX+1}" ]; then
   BULLETTRAIN_GO_PREFIX="go"
@@ -156,7 +156,7 @@ if [ ! -n "${BULLETTRAIN_KCTX_BG+1}" ]; then
   BULLETTRAIN_KCTX_BG=yellow
 fi
 if [ ! -n "${BULLETTRAIN_KCTX_FG+1}" ]; then
-  BULLETTRAIN_KCTX_FG=white
+  BULLETTRAIN_KCTX_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_KCTX_PREFIX+1}" ]; then
   BULLETTRAIN_KCTX_PREFIX="⎈"
@@ -176,7 +176,7 @@ if [ ! -n "${BULLETTRAIN_ELIXIR_BG+1}" ]; then
   BULLETTRAIN_ELIXIR_BG=magenta
 fi
 if [ ! -n "${BULLETTRAIN_ELIXIR_FG+1}" ]; then
-  BULLETTRAIN_ELIXIR_FG=white
+  BULLETTRAIN_ELIXIR_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_ELIXIR_PREFIX+1}" ]; then
   BULLETTRAIN_ELIXIR_PREFIX="💧"
@@ -187,7 +187,7 @@ if [ ! -n "${BULLETTRAIN_DIR_BG+1}" ]; then
   BULLETTRAIN_DIR_BG=blue
 fi
 if [ ! -n "${BULLETTRAIN_DIR_FG+1}" ]; then
-  BULLETTRAIN_DIR_FG=white
+  BULLETTRAIN_DIR_FG=black
 fi
 if [ ! -n "${BULLETTRAIN_DIR_CONTEXT_SHOW+1}" ]; then
   BULLETTRAIN_DIR_CONTEXT_SHOW=false
@@ -236,6 +236,9 @@ if [ ! -n "${BULLETTRAIN_CONTEXT_BG+1}" ]; then
 fi
 if [ ! -n "${BULLETTRAIN_CONTEXT_FG+1}" ]; then
   BULLETTRAIN_CONTEXT_FG=default
+fi
+if [ ! -n "${BULLETTRAIN_CONTEXT_DEFAULT_USER+1}" ]; then
+  BULLETTRAIN_CONTEXT_DEFAULT_USER="HaeseongMac"
 fi
 if [ ! -n "${BULLETTRAIN_CONTEXT_HOSTNAME+1}" ]; then
   BULLETTRAIN_CONTEXT_HOSTNAME=%m
