@@ -40,7 +40,7 @@ fi
 
 # PROMPT
 if [ ! -n "${BULLETTRAIN_PROMPT_CHAR+1}" ]; then
-  BULLETTRAIN_PROMPT_CHAR="\$"
+  BULLETTRAIN_PROMPT_CHAR="❯"
 fi
 if [ ! -n "${BULLETTRAIN_PROMPT_ROOT+1}" ]; then
   BULLETTRAIN_PROMPT_ROOT=true
@@ -337,7 +337,7 @@ fi
 # ------------------------------------------------------------------------------
 
 CURRENT_BG='NONE'
-SEGMENT_SEPARATOR='❯'
+SEGMENT_SEPARATOR=''
 
 # Begin a segment
 # Takes three arguments, background, foreground and text. All of them can be omitted,
